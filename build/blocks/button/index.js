@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/blocks/example/assets/icon.svg":
-/*!********************************************!*\
-  !*** ./src/blocks/example/assets/icon.svg ***!
-  \********************************************/
+/***/ "./src/blocks/button/assets/icon.svg":
+/*!*******************************************!*\
+  !*** ./src/blocks/button/assets/icon.svg ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -15,31 +15,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path, _path2;
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 var SvgIcon = function SvgIcon(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
-    xmlSpace: "preserve",
     width: 800,
     height: 800,
-    viewBox: "0 0 496.8 496.8"
-  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
-    d: "M496 224c0-7.2-4.8-13.6-12-15.2l-45.6-11.2 33.6-32.8c5.6-4.8 6.4-12.8 2.4-19.2l-24-41.6c-4-6.4-11.2-9.6-18.4-7.2l-45.6 12.8L400 63.2c1.6-7.2-.8-14.4-7.2-18.4l-41.6-24c-6.4-4-14.4-2.4-19.2 2.4l-32.8 33.6L288 11.2C285.6 4.8 279.2 0 272 0h-48c-7.2 0-13.6 4.8-15.2 12l-11.2 45.6L164 24c-4.8-5.6-12.8-6.4-19.2-2.4l-41.6 24C96.8 48.8 93.6 56 96 63.2l12.8 45.6L63.2 96c-7.2-1.6-14.4.8-18.4 7.2l-24 41.6c-4 6.4-2.4 14.4 2.4 19.2l33.6 32.8L11.2 208C4.8 210.4 0 216.8 0 224v48c0 7.2 4.8 13.6 12 15.2l45.6 11.2L24 332c-5.6 4.8-6.4 12.8-2.4 19.2l24 41.6c3.2 6.4 10.4 9.6 17.6 7.2l45.6-12.8L96 432.8c-1.6 7.2.8 14.4 7.2 18.4l41.6 24c6.4 4 14.4 2.4 19.2-2.4l32.8-33.6 11.2 45.6c1.6 7.2 8 12 15.2 12h48c7.2 0 13.6-4.8 15.2-12l11.2-45.6 32.8 33.6c4.8 5.6 12.8 6.4 19.2 2.4l41.6-24c6.4-4 9.6-11.2 7.2-18.4l-12.8-45.6 45.6 12.8c7.2 1.6 14.4-.8 18.4-7.2l24-41.6c4-6.4 2.4-14.4-2.4-19.2l-33.6-32.8 45.6-11.2c7.2-1.6 12-8 12-15.2z",
-    style: {
-      fill: "#e83888"
-    }
-  }), "c0-2.4-1.6-4-4-4h-40.8v-28.8h43.2c2.4,0,4-1.6,4-4v-12.8c0-2.4-1.6-4-4-4h-59.2h-3.2H252c-2.4,0-4,1.6-4,4v14.4\r\n\tc-1.6-3.2-4-6.4-6.4-8.8c-8-7.2-18.4-9.6-36-9.6c-4.8,0-11.2,0-16.8,0.8H188h-2.4l18.4,18.4c0.8,0,1.6,0,2.4,0\r\n\tc15.2,0,22.4,6.4,22.4,17.6c0,2.4-0.8,4-0.8,6.4l15.2,15.2c1.6-2.4,3.2-4,4.8-7.2v12l22.4,22.4v-16H296c2.4,0,4-1.6,4-4v-12\r\n\tc0-2.4-1.6-4-4-4h-25.6v-28.8h44v82.4H288l20,20h8C317.6,309.6,317.6,309.6,318.4,309.6z\"/>");
+    viewBox: "0 0 20 20"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "none",
+    d: "M0 0h20v20H0z"
+  })), _path2 || (_path2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M17 5H3c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2m1 7c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h14c.6 0 1 .4 1 1z"
+  })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjxzdmcgaGVpZ2h0PSI4MDBweCIgd2lkdGg9IjgwMHB4IiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiANCgkgdmlld0JveD0iMCAwIDQ5Ni44IDQ5Ni44IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiNFODM4ODg7IiBkPSJNNDk2LDIyNGMwLTcuMi00LjgtMTMuNi0xMi0xNS4ybC00NS42LTExLjJsMzMuNi0zMi44YzUuNi00LjgsNi40LTEyLjgsMi40LTE5LjJsLTI0LTQxLjYNCgljLTQtNi40LTExLjItOS42LTE4LjQtNy4ybC00NS42LDEyLjhMNDAwLDYzLjJjMS42LTcuMi0wLjgtMTQuNC03LjItMTguNGwtNDEuNi0yNGMtNi40LTQtMTQuNC0yLjQtMTkuMiwyLjRsLTMyLjgsMzMuNkwyODgsMTEuMg0KCUMyODUuNiw0LjgsMjc5LjIsMCwyNzIsMGgtNDhjLTcuMiwwLTEzLjYsNC44LTE1LjIsMTJsLTExLjIsNDUuNkwxNjQsMjRjLTQuOC01LjYtMTIuOC02LjQtMTkuMi0yLjRsLTQxLjYsMjQNCglDOTYuOCw0OC44LDkzLjYsNTYsOTYsNjMuMmwxMi44LDQ1LjZMNjMuMiw5NmMtNy4yLTEuNi0xNC40LDAuOC0xOC40LDcuMmwtMjQsNDEuNmMtNCw2LjQtMi40LDE0LjQsMi40LDE5LjJsMzMuNiwzMi44TDExLjIsMjA4DQoJQzQuOCwyMTAuNCwwLDIxNi44LDAsMjI0djQ4YzAsNy4yLDQuOCwxMy42LDEyLDE1LjJsNDUuNiwxMS4yTDI0LDMzMmMtNS42LDQuOC02LjQsMTIuOC0yLjQsMTkuMmwyNCw0MS42DQoJYzMuMiw2LjQsMTAuNCw5LjYsMTcuNiw3LjJsNDUuNi0xMi44TDk2LDQzMi44Yy0xLjYsNy4yLDAuOCwxNC40LDcuMiwxOC40bDQxLjYsMjRjNi40LDQsMTQuNCwyLjQsMTkuMi0yLjRsMzIuOC0zMy42bDExLjIsNDUuNg0KCWMxLjYsNy4yLDgsMTIsMTUuMiwxMmg0OGM3LjIsMCwxMy42LTQuOCwxNS4yLTEybDExLjItNDUuNmwzMi44LDMzLjZjNC44LDUuNiwxMi44LDYuNCwxOS4yLDIuNGw0MS42LTI0YzYuNC00LDkuNi0xMS4yLDcuMi0xOC40DQoJbC0xMi44LTQ1LjZsNDUuNiwxMi44YzcuMiwxLjYsMTQuNC0wLjgsMTguNC03LjJsMjQtNDEuNmM0LTYuNCwyLjQtMTQuNC0yLjQtMTkuMmwtMzMuNi0zMi44bDQ1LjYtMTEuMmM3LjItMS42LDEyLTgsMTItMTUuMg0KCUw0OTYsMjI0eiIvPg0KDQoJYzAtMi40LTEuNi00LTQtNGgtNDAuOHYtMjguOGg0My4yYzIuNCwwLDQtMS42LDQtNHYtMTIuOGMwLTIuNC0xLjYtNC00LTRoLTU5LjJoLTMuMkgyNTJjLTIuNCwwLTQsMS42LTQsNHYxNC40DQoJYy0xLjYtMy4yLTQtNi40LTYuNC04LjhjLTgtNy4yLTE4LjQtOS42LTM2LTkuNmMtNC44LDAtMTEuMiwwLTE2LjgsMC44SDE4OGgtMi40bDE4LjQsMTguNGMwLjgsMCwxLjYsMCwyLjQsMA0KCWMxNS4yLDAsMjIuNCw2LjQsMjIuNCwxNy42YzAsMi40LTAuOCw0LTAuOCw2LjRsMTUuMiwxNS4yYzEuNi0yLjQsMy4yLTQsNC44LTcuMnYxMmwyMi40LDIyLjR2LTE2SDI5NmMyLjQsMCw0LTEuNiw0LTR2LTEyDQoJYzAtMi40LTEuNi00LTQtNGgtMjUuNnYtMjguOGg0NHY4Mi40SDI4OGwyMCwyMGg4QzMxNy42LDMwOS42LDMxNy42LDMwOS42LDMxOC40LDMwOS42eiIvPg0KPC9zdmc+");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIEdlbmVyYXRvcjogU1ZHIFJlcG8gTWl4ZXIgVG9vbHMgLS0+Cjxzdmcgd2lkdGg9IjgwMHB4IiBoZWlnaHQ9IjgwMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cg08cmVjdCB4PSIwIiBmaWxsPSJub25lIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiLz4KDTxnPgoNPHBhdGggZD0iTTE3IDVIM2MtMS4xIDAtMiAuOS0yIDJ2NmMwIDEuMS45IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjdjMC0xLjEtLjktMi0yLTJ6bTEgN2MwIC42LS40IDEtMSAxSDNjLS42IDAtMS0uNC0xLTFWN2MwLS42LjQtMSAxLTFoMTRjLjYgMCAxIC40IDEgMXY1eiIvPgoNPC9nPgoNPC9zdmc+");
 
 /***/ }),
 
-/***/ "./src/blocks/example/edit.js":
-/*!************************************!*\
-  !*** ./src/blocks/example/edit.js ***!
-  \************************************/
+/***/ "./src/blocks/button/edit.js":
+/*!***********************************!*\
+  !*** ./src/blocks/button/edit.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -52,29 +52,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/example/editor.scss");
-
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/button/editor.scss");
 
 
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
 
 
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
+
 
 
 /**
@@ -85,18 +72,78 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @return {Element} Element to render.
  */
-function Edit() {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Blocksmg – hello from the editor!', 'blocksmg'));
+
+function Edit(props) {
+  const {
+    attributes,
+    setAttributes
+  } = props;
+  const {
+    buttonText,
+    buttonLink,
+    borderRadius,
+    buttonSize
+  } = attributes;
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
+    className: `bMg-button ${borderRadius ? 'bMg-button-rounded' : ''} ${buttonSize ? `bMg-button-${buttonSize}` : ''}`
+  });
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    title: "Button Settings",
+    initialOpen: true,
+    className: "panel-body-class"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: {
+      flex: 1
+    }
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalInputControl, {
+    label: "Url",
+    labelPosition: "top",
+    value: buttonLink !== null && buttonLink !== void 0 ? buttonLink : "#",
+    type: "email",
+    onChange: buttonLink => setAttributes({
+      buttonLink
+    })
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalDimensionControl, {
+    label: 'Size',
+    onChange: buttonSize => setAttributes({
+      buttonSize
+    }),
+    value: buttonSize,
+    sizes: [{
+      "name": "Xs",
+      "slug": "small"
+    }, {
+      "name": "Md",
+      "slug": "medium"
+    }, {
+      "name": "Lg",
+      "slug": "large"
+    }]
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
+    label: "Rounded",
+    checked: borderRadius,
+    onChange: borderRadius => setAttributes({
+      borderRadius
+    })
+  }))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    ...blockProps
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add text…', 'blocksMg'),
+    value: buttonText !== null && buttonText !== void 0 ? buttonText : "Add text…",
+    onChange: buttonText => setAttributes({
+      buttonText
+    }),
+    rel: "noopener noreferrer",
+    allowedFormats: ['core/bold', 'core/italic']
+  })));
 }
 
 /***/ }),
 
-/***/ "./src/blocks/example/index.js":
-/*!*************************************!*\
-  !*** ./src/blocks/example/index.js ***!
-  \*************************************/
+/***/ "./src/blocks/button/index.js":
+/*!************************************!*\
+  !*** ./src/blocks/button/index.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -104,11 +151,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/example/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./src/blocks/example/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./src/blocks/example/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./block.json */ "./src/blocks/example/block.json");
-/* harmony import */ var _assets_icon_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/icon.svg */ "./src/blocks/example/assets/icon.svg");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/button/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./src/blocks/button/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./src/blocks/button/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./block.json */ "./src/blocks/button/block.json");
+/* harmony import */ var _assets_icon_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/icon.svg */ "./src/blocks/button/assets/icon.svg");
 
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
@@ -157,10 +204,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/example/save.js":
-/*!************************************!*\
-  !*** ./src/blocks/example/save.js ***!
-  \************************************/
+/***/ "./src/blocks/button/save.js":
+/*!***********************************!*\
+  !*** ./src/blocks/button/save.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -197,10 +244,10 @@ function save() {
 
 /***/ }),
 
-/***/ "./src/blocks/example/editor.scss":
-/*!****************************************!*\
-  !*** ./src/blocks/example/editor.scss ***!
-  \****************************************/
+/***/ "./src/blocks/button/editor.scss":
+/*!***************************************!*\
+  !*** ./src/blocks/button/editor.scss ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -209,10 +256,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/example/style.scss":
-/*!***************************************!*\
-  !*** ./src/blocks/example/style.scss ***!
-  \***************************************/
+/***/ "./src/blocks/button/style.scss":
+/*!**************************************!*\
+  !*** ./src/blocks/button/style.scss ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -251,6 +298,26 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["components"];
+
+/***/ }),
+
+/***/ "@wordpress/element":
+/*!*********************************!*\
+  !*** external ["wp","element"] ***!
+  \*********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["element"];
+
+/***/ }),
+
 /***/ "@wordpress/i18n":
 /*!******************************!*\
   !*** external ["wp","i18n"] ***!
@@ -261,13 +328,13 @@ module.exports = window["wp"]["i18n"];
 
 /***/ }),
 
-/***/ "./src/blocks/example/block.json":
-/*!***************************************!*\
-  !*** ./src/blocks/example/block.json ***!
-  \***************************************/
+/***/ "./src/blocks/button/block.json":
+/*!**************************************!*\
+  !*** ./src/blocks/button/block.json ***!
+  \**************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/example-blocksmg","version":"0.1.0","title":"Example-Blocksmg","category":"blocksmg","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"blocksmg","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blocksmg/button","version":"0.1.0","title":"BMG-Button","category":"blocksmg","icon":"smiley","description":"Blocks Mg - Custom Button with Options","supports":{"html":false,"color":{"background":true,"text":true}},"attributes":{"buttonText":{"type":"string","default":"Button Text"},"buttonLink":{"type":"string","default":"https://www.google.com"},"borderRadius":{"type":"boolean","default":false},"buttonSize":{"type":"string","default":"medium"},"style":{"type":"object","default":{"color":{"background":"#000","text":"#fff"}}}},"styles":[{"name":"default","label":"Default","isDefault":true},{"name":"outline","label":"Outline"},{"name":"squared","label":"Squared"}],"example":{},"keywords":["button","blocksmg","Link"],"textdomain":"blocksmg","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 
@@ -381,8 +448,8 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"blocks/example/index": 0,
-/******/ 			"blocks/example/style-index": 0
+/******/ 			"blocks/button/index": 0,
+/******/ 			"blocks/button/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -432,7 +499,7 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["blocks/example/style-index"], () => (__webpack_require__("./src/blocks/example/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["blocks/button/style-index"], () => (__webpack_require__("./src/blocks/button/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -11,5 +11,6 @@ module.exports = {
 		...getWebpackEntryPoints(),
 		// Add your new entry point here
 		'index': './src/index.js',
+		'global-styles': './src/global-styles/globals.scss',
 	},
 };

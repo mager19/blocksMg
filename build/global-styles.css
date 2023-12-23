@@ -1,0 +1,32 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/@wordpress/scripts/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/global-styles/globals.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --red: #ff0000;
+  /* Fonts */
+  --fontSize-small: 0.875rem;
+  --fontSize-medium: 1rem;
+  --fontSize-large: 1.25rem;
+}
+
+/* Buttons */
+.bMg-button-rounded {
+  border-radius: 25px;
+}
+
+.bMg-button-small {
+  font-size: var(--fontSize-small);
+  padding: 0.25rem 1rem;
+}
+
+.bMg-button-medium {
+  font-size: var(--fontSize-medium);
+  padding: 0.5rem 2rem;
+}
+
+.bMg-button-large {
+  font-size: var(--fontSize-medium);
+  padding: 0.75rem 4rem;
+}
+
+/*# sourceMappingURL=global-styles.css.map*/

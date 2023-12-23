@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blocksmg/button",
+  "version": "0.1.0",
+  "title": "BMG-Button",
+  "category": "blocksmg",
+  "icon": "smiley",
+  "description": "Blocks Mg - Custom Button with Options",
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true
+    }
+  },
+  "attributes": {
+    "buttonText": {
+      "type": "string",
+      "default": "Button Text"
+    },
+    "buttonLink": {
+      "type": "string",
+      "default": "https://www.google.com"
+    },
+    "borderRadius": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonSize": {
+      "type": "string",
+      "default": "medium"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#000",
+          "text": "#fff"
+        }
+      }
+    }
+  },
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "outline",
+      "label": "Outline"
+    },
+    {
+      "name": "squared",
+      "label": "Squared"
+    }
+  ],
+  "example": {},
+  "keywords": [
+    "button",
+    "blocksmg",
+    "Link"
+  ],
+  "textdomain": "blocksmg",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
