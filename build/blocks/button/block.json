@@ -31,6 +31,14 @@
       "type": "string",
       "default": "medium"
     },
+    "icon": {
+      "type": "boolean",
+      "default": false
+    },
+    "iconPosition": {
+      "type": "string",
+      "default": "right"
+    },
     "style": {
       "type": "object",
       "default": {

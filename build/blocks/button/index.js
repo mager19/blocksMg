@@ -2,6 +2,36 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blocks/button/assets/arrow.svg":
+/*!********************************************!*\
+  !*** ./src/blocks/button/assets/arrow.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ReactComponent: () => (/* binding */ SvgArrow),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+var SvgArrow = function SvgArrow(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293z"
+  })));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTcuMjkzIDQuNzA3IDE0LjU4NiAxMmwtNy4yOTMgNy4yOTMgMS40MTQgMS40MTRMMTcuNDE0IDEyIDguNzA3IDMuMjkzIDcuMjkzIDQuNzA3eiIvPjwvc3ZnPgo=");
+
+/***/ }),
+
 /***/ "./src/blocks/button/assets/icon.svg":
 /*!*******************************************!*\
   !*** ./src/blocks/button/assets/icon.svg ***!
@@ -54,8 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_arrow_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/arrow.svg */ "./src/blocks/button/assets/arrow.svg");
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/button/editor.scss");
 
 
@@ -82,7 +111,9 @@ function Edit(props) {
     buttonText,
     buttonLink,
     borderRadius,
-    buttonSize
+    buttonSize,
+    icon,
+    iconPosition
   } = attributes;
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
     className: `bMg-button ${borderRadius ? 'bMg-button-rounded' : ''} ${buttonSize ? `bMg-button-${buttonSize}` : ''}`
@@ -125,9 +156,52 @@ function Edit(props) {
     onChange: borderRadius => setAttributes({
       borderRadius
     })
-  }))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
+    label: "Show Icon",
+    checked: icon,
+    onChange: icon => setAttributes({
+      icon
+    })
+  }), icon && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalToggleGroupControl, {
+    label: "Icon Position",
+    value: iconPosition,
+    isBlock: true,
+    onChange: iconPosition => setAttributes({
+      iconPosition
+    })
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalToggleGroupControlOption, {
+    value: "left",
+    label: "Left"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalToggleGroupControlOption, {
+    value: "right",
+    label: "Right"
+  })))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+  }, icon ? iconPosition == 'left' ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_assets_arrow_svg__WEBPACK_IMPORTED_MODULE_4__.ReactComponent, {
+    style: {
+      fill: 'currentColor'
+    }
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add text…', 'blocksMg'),
+    value: buttonText !== null && buttonText !== void 0 ? buttonText : "Add text…",
+    onChange: buttonText => setAttributes({
+      buttonText
+    }),
+    rel: "noopener noreferrer",
+    allowedFormats: ['core/bold', 'core/italic']
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add text…', 'blocksMg'),
+    value: buttonText !== null && buttonText !== void 0 ? buttonText : "Add text…",
+    onChange: buttonText => setAttributes({
+      buttonText
+    }),
+    rel: "noopener noreferrer",
+    allowedFormats: ['core/bold', 'core/italic']
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_assets_arrow_svg__WEBPACK_IMPORTED_MODULE_4__.ReactComponent, {
+    style: {
+      fill: 'currentColor'
+    }
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add text…', 'blocksMg'),
     value: buttonText !== null && buttonText !== void 0 ? buttonText : "Add text…",
     onChange: buttonText => setAttributes({
@@ -308,16 +382,6 @@ module.exports = window["wp"]["components"];
 
 /***/ }),
 
-/***/ "@wordpress/element":
-/*!*********************************!*\
-  !*** external ["wp","element"] ***!
-  \*********************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["element"];
-
-/***/ }),
-
 /***/ "@wordpress/i18n":
 /*!******************************!*\
   !*** external ["wp","i18n"] ***!
@@ -334,7 +398,7 @@ module.exports = window["wp"]["i18n"];
   \**************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blocksmg/button","version":"0.1.0","title":"BMG-Button","category":"blocksmg","icon":"smiley","description":"Blocks Mg - Custom Button with Options","supports":{"html":false,"color":{"background":true,"text":true}},"attributes":{"buttonText":{"type":"string","default":"Button Text"},"buttonLink":{"type":"string","default":"https://www.google.com"},"borderRadius":{"type":"boolean","default":false},"buttonSize":{"type":"string","default":"medium"},"style":{"type":"object","default":{"color":{"background":"#000","text":"#fff"}}}},"styles":[{"name":"default","label":"Default","isDefault":true},{"name":"outline","label":"Outline"},{"name":"squared","label":"Squared"}],"example":{},"keywords":["button","blocksmg","Link"],"textdomain":"blocksmg","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blocksmg/button","version":"0.1.0","title":"BMG-Button","category":"blocksmg","icon":"smiley","description":"Blocks Mg - Custom Button with Options","supports":{"html":false,"color":{"background":true,"text":true}},"attributes":{"buttonText":{"type":"string","default":"Button Text"},"buttonLink":{"type":"string","default":"https://www.google.com"},"borderRadius":{"type":"boolean","default":false},"buttonSize":{"type":"string","default":"medium"},"icon":{"type":"boolean","default":false},"iconPosition":{"type":"string","default":"right"},"style":{"type":"object","default":{"color":{"background":"#000","text":"#fff"}}}},"styles":[{"name":"default","label":"Default","isDefault":true},{"name":"outline","label":"Outline"},{"name":"squared","label":"Squared"}],"example":{},"keywords":["button","blocksmg","Link"],"textdomain":"blocksmg","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

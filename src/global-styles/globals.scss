@@ -9,22 +9,40 @@
 }
 
 /* Buttons */
+.bMg-button {
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+
+	svg{
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+	}
+}
 .bMg-button-rounded {
 	border-radius: 25px;
 }
 
 .bMg-button-small {
 	font-size: var(--fontSize-small);
+	gap: 5px;
 	padding: 0.25rem 1rem;
 }
 
 .bMg-button-medium {
 	font-size: var(--fontSize-medium);
-	padding: 0.5rem 2rem;
+	gap: 10px;
+	padding: 0.7rem 2rem;
 }
 
 .bMg-button-large {
 	font-size: var(--fontSize-medium);
+	gap: 15px;
 	padding: 0.75rem 4rem;
+}
 
+.component-icon-picker-inline-button, .icon-preview {
+	align-items: center;
+	display: flex;
 }

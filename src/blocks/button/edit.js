@@ -1,7 +1,14 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InspectorControls, RichText } from '@wordpress/block-editor';
-import { PanelBody, PanelRow, __experimentalInputControl as InputControl, ToggleControl, __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
-import { useState } from '@wordpress/element';
+import {
+	PanelBody, PanelRow, __experimentalInputControl as InputControl, ToggleControl, __experimentalDimensionControl as DimensionControl,
+	__experimentalToggleGroupControl as ToggleGroupControl,
+	__experimentalToggleGroupControlOption as ToggleGroupControlOption
+} from '@wordpress/components';
+
+import { ReactComponent as Icon } from './assets/arrow.svg';
+
+
 import './editor.scss';
 
 /**
@@ -17,12 +24,12 @@ export default function Edit(props) {
 
 	const { attributes, setAttributes } = props;
 
-	const { buttonText, buttonLink, borderRadius, buttonSize } = attributes;
-
+	const { buttonText, buttonLink, borderRadius, buttonSize, icon, iconPosition } = attributes;
 
 	const blockProps = useBlockProps({
 		className: `bMg-button ${borderRadius ? 'bMg-button-rounded' : ''} ${buttonSize ? `bMg-button-${buttonSize}` : ''}`,
 	});
+
 
 	return (
 		<>
@@ -63,19 +70,63 @@ export default function Edit(props) {
 								checked={borderRadius}
 								onChange={(borderRadius) => setAttributes({ borderRadius })}
 							/>
+							<ToggleControl
+								label="Show Icon"
+								checked={icon}
+								onChange={(icon) => setAttributes({ icon })}
+							/>
+
+							{icon &&
+								<ToggleGroupControl label="Icon Position" value={iconPosition} isBlock onChange={(iconPosition) => setAttributes({ iconPosition })}>
+									<ToggleGroupControlOption value="left" label="Left" />
+									<ToggleGroupControlOption value="right" label="Right" />
+								</ToggleGroupControl>
+							}
 						</div>
+
 					</PanelRow>
 				</PanelBody>
 
 			</InspectorControls>
 			<div {...blockProps}>
-				<RichText
-					placeholder={__('Add text…', 'blocksMg')}
-					value={buttonText ?? "Add text…"}
-					onChange={(buttonText) => setAttributes({ buttonText })}
-					rel="noopener noreferrer"
-					allowedFormats={['core/bold', 'core/italic']}
-				/>
+
+				{
+					icon ? (
+						iconPosition == 'left' ? (
+							<>
+								<Icon style={{ fill: 'currentColor' }} />
+								<RichText
+									placeholder={__('Add text…', 'blocksMg')}
+									value={buttonText ?? "Add text…"}
+									onChange={(buttonText) => setAttributes({ buttonText })}
+									rel="noopener noreferrer"
+									allowedFormats={['core/bold', 'core/italic']}
+								/>
+							</>
+						) : (
+							<>
+								<RichText
+									placeholder={__('Add text…', 'blocksMg')}
+									value={buttonText ?? "Add text…"}
+									onChange={(buttonText) => setAttributes({ buttonText })}
+									rel="noopener noreferrer"
+									allowedFormats={['core/bold', 'core/italic']}
+								/>
+								<Icon style={{ fill: 'currentColor' }} />
+							</>
+						)
+					)
+						: <RichText
+							placeholder={__('Add text…', 'blocksMg')}
+							value={buttonText ?? "Add text…"}
+							onChange={(buttonText) => setAttributes({ buttonText })}
+							rel="noopener noreferrer"
+							allowedFormats={['core/bold', 'core/italic']}
+						/>
+				}
+
+
+
 			</div>
 		</>
 	);
