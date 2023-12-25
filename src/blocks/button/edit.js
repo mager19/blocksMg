@@ -6,6 +6,8 @@ import {
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption
 } from '@wordpress/components';
 
+import { useState } from 'react';
+
 import { ReactComponent as Icon } from './assets/arrow.svg';
 
 
@@ -30,6 +32,18 @@ export default function Edit(props) {
 		className: `bMg-button ${borderRadius ? 'bMg-button-rounded' : ''} ${buttonSize ? `bMg-button-${buttonSize}` : ''}`,
 	});
 
+	const [error, setError] = useState(null);
+
+	const handleChange = (newValue) => {
+		try {
+			new URL(newValue);
+			setError(null);
+			setAttributes({ buttonLink: newValue }); // Actualiza el atributo 'url' en el bloque
+		} catch (_) {
+			setError(__('Please enter a valid URL. With http:// or https://', 'blocksMg'));
+		}
+	};
+
 
 	return (
 		<>
@@ -38,14 +52,14 @@ export default function Edit(props) {
 					<PanelRow>
 						<div style={{ flex: 1 }}>
 							<InputControl
-								label="Url"
+								label={__('Url', 'blocksMg')}
 								labelPosition="top"
-								value={buttonLink ?? "#"}
-								type="email"
-								onChange={
-									(buttonLink) => setAttributes({ buttonLink })
-								}
+								value={buttonLink ?? '#'}
+								onChange={handleChange}
+								help={error}
+								placeholder={__('Enter a URL with http:// or https://', 'blocksMg')}
 							/>
+
 							<DimensionControl
 								label={'Size'}
 								onChange={(buttonSize) => setAttributes({ buttonSize })}
