@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name:       Base Blocksmg
+ * Plugin Name:       Blocksmg
  * Description:       A plugin of custom blocks by mager19.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.2
+ * Version:           0.1.2.1
  * Author:            Mager19
  * Author URI:        https://twitter.com/mager19
  * License:           GPL-2.0-or-later
@@ -78,11 +78,6 @@ final class Blocksmg
         //Optional: If you're using a private repository, specify the access token like this:
         // $myUpdateChecker->setAuthentication('your-token-here');
     }
-
-
-
-
-
 }
 
 Blocksmg::init();
