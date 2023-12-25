@@ -1,0 +1,57 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-blocksmg-button {
+	align-items: center;
+	cursor: pointer;
+	display: inline-flex;
+	text-decoration: none !important;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+/* Buttons */
+.bMg-button {
+	gap: 5px;
+	justify-content: space-evenly;
+
+	svg{
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	span {
+		padding: 0 5px;
+	}
+}
+.bMg-button-rounded {
+	border-radius: 25px;
+}
+
+.bMg-button-small {
+	font-size: var(--fontSize-small);
+	padding: 0.4rem 1.5rem;
+}
+
+.bMg-button-medium {
+	font-size: var(--fontSize-medium);
+	padding: 0.7rem 3rem;
+}
+
+.bMg-button-large {
+	font-size: var(--fontSize-medium);
+	padding: 0.75rem 5rem;
+}
+
+.component-icon-picker-inline-button, .icon-preview {
+	align-items: center;
+	display: flex;
+}
+
