@@ -63,6 +63,9 @@ final class Blocksmg
                 $asset_file = include plugin_dir_path(__FILE__) . 'build/index.asset.php';
 
                 wp_enqueue_script('index-settings', plugin_dir_url(__FILE__) . '/build/index.js', $asset_file['dependencies'], $asset_file['version'], true);
+
+                $global_styles = include plugin_dir_path(__FILE__) . 'build/global-styles.asset.php';
+                wp_enqueue_style('global-styles', plugin_dir_url(__FILE__) . '/build/global-styles.css', array(), $global_styles['version']);
             }
         );
 
@@ -74,9 +77,6 @@ final class Blocksmg
 
         //Set the branch that contains the stable release.
         $myUpdateChecker->setBranch('releases');
-
-        //Optional: If you're using a private repository, specify the access token like this:
-        // $myUpdateChecker->setAuthentication('your-token-here');
     }
 }
 

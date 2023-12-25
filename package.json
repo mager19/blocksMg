@@ -15,7 +15,10 @@
 		"start": "wp-scripts start"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.18.0"
+		"@wordpress/scripts": "^26.18.0",
+		"css-loader": "^6.8.1",
+		"sass": "^1.69.5",
+		"sass-loader": "^13.3.2"
 	},
 	"dependencies": {
 		"@10up/block-components": "^1.17.3"
