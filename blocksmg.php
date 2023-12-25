@@ -70,7 +70,7 @@ final class Blocksmg
         );
 
         $myUpdateChecker = PucFactory::buildUpdateChecker(
-            'https://github.com/mager19/blocks-plugin-base/',
+            'https://github.com/mager19/blocksMg/',
             __FILE__,
             'Blocksmg'
         );
