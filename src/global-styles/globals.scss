@@ -8,3 +8,19 @@
 	--fontSize-large: 1.5rem;
 }
 
+.relative {
+	position: relative;
+}
+
+.tagBlock {
+	border-radius: 20px;
+	color: #000;
+	font-size: 11px;
+	left: 0;
+	letter-spacing: 0.5px;
+	padding: 2px 5px;
+	top: -20px;
+	opacity: 0.5;
+	position: absolute;
+	text-decoration: underline;
+}

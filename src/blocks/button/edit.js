@@ -10,6 +10,7 @@ import { useState } from 'react';
 
 import { ReactComponent as Icon } from './assets/arrow.svg';
 
+import { TagBlock } from '../../components/tagBlock';
 
 import './editor.scss';
 
@@ -29,7 +30,7 @@ export default function Edit(props) {
 	const { buttonText, buttonLink, borderRadius, buttonSize, icon, iconPosition } = attributes;
 
 	const blockProps = useBlockProps({
-		className: `bMg-button ${borderRadius ? 'bMg-button-rounded' : ''} ${buttonSize ? `bMg-button-${buttonSize}` : ''}`,
+		className: `relative bMg-button ${borderRadius ? 'bMg-button-rounded' : ''} ${buttonSize ? `bMg-button-${buttonSize}` : ''}`,
 	});
 
 	const [error, setError] = useState(null);
@@ -43,7 +44,6 @@ export default function Edit(props) {
 			setError(__('Please enter a valid URL. With http:// or https://', 'blocksMg'));
 		}
 	};
-
 
 	return (
 		<>
@@ -103,6 +103,7 @@ export default function Edit(props) {
 
 			</InspectorControls>
 			<div {...blockProps}>
+				<TagBlock text={props.name} />
 
 				{
 					icon ? (
@@ -138,9 +139,6 @@ export default function Edit(props) {
 							allowedFormats={['core/bold', 'core/italic']}
 						/>
 				}
-
-
-
 			</div>
 		</>
 	);
