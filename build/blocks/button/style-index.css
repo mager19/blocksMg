@@ -1,1 +1,58 @@
-.wp-block-blocksmg-button{align-items:center;cursor:pointer;display:inline-flex;text-decoration:none!important}.wp-block-blocksmg-button:hover{opacity:.8}.bMg-button{gap:5px;justify-content:space-evenly}.bMg-button svg{align-items:center;display:flex;justify-content:flex-end}.bMg-button span{padding:0 5px}.bMg-button-rounded{border-radius:25px}.bMg-button-small{font-size:var(--fontSize-small);padding:.4rem 1.5rem}.bMg-button-medium{font-size:var(--fontSize-medium);padding:.7rem 3rem}.bMg-button-large{font-size:var(--fontSize-medium);padding:.75rem 5rem}.component-icon-picker-inline-button,.icon-preview{align-items:center;display:flex}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/@wordpress/scripts/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/button/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-blocksmg-button {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none !important;
+}
+.wp-block-blocksmg-button:hover {
+  opacity: 0.8;
+}
+
+/* Buttons */
+.bMg-button {
+  gap: 5px;
+  justify-content: space-evenly;
+}
+.bMg-button svg {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.bMg-button span {
+  padding: 0 5px;
+}
+
+.bMg-button-rounded {
+  border-radius: 25px;
+}
+
+.bMg-button-small {
+  font-size: var(--fontSize-small);
+  padding: 0.4rem 1.5rem;
+}
+
+.bMg-button-medium {
+  font-size: var(--fontSize-medium);
+  padding: 0.7rem 3rem;
+}
+
+.bMg-button-large {
+  font-size: var(--fontSize-medium);
+  padding: 0.75rem 5rem;
+}
+
+.component-icon-picker-inline-button, .icon-preview {
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
