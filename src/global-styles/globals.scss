@@ -12,8 +12,11 @@
 	}
 }
 
-.block__container__innerblocks {
-	position: relative;
+.editor-styles-wrapper {
+	opacity: 0.2;
+	.block__container__innerblocks {
+		position: relative;
+	}
 }
 
 @media (max-width: 767px) {
