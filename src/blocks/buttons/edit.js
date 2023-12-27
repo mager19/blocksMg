@@ -98,7 +98,7 @@ export default function Edit(props) {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<div className='relative'>
+			<div className='block__container__innerblocks'>
 				<TagBlock text={props.name} />
 				<div {...innerBlocksProps} />
 			</div>

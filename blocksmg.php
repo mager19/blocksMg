@@ -4,7 +4,7 @@
  * Description:       A plugin of custom blocks by mager19.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.6
+ * Version:           0.1.6b
  * Author:            Mager19
  * Author URI:        https://twitter.com/mager19
  * License:           GPL-2.0-or-later
