@@ -1,19 +1,22 @@
 @import "./partials/variables.scss";
 
-.block-blocksMg {
-	.block-list-appender{
-		bottom: 5px;
-		right: 5px;
+
+.editor-styles-wrapper {
+	.block__container__innerblocks {
+		position: relative;
 	}
-	.block-editor-button-block-appender {
-		svg {
-			background-color: $base;
+
+	.block-blocksMg {
+		.block-list-appender{
+			bottom: 5px;
+			right: 5px;
+		}
+		.block-editor-button-block-appender {
+			svg {
+				background-color: $base;
+			}
 		}
 	}
-}
-
-.block__container__innerblocks {
-	position: relative;
 }
 
 @media (max-width: 767px) {
