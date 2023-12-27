@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocksmg/section-header",
+	"version": "0.1.0",
+	"title": "BMG-Section-header",
+	"category": "blocksmg",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"attributes": {
+		"eyebrow" : {
+			"type": "string",
+			"default": ""
+		},
+		"title" : {
+			"type": "string",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"showEyebrow": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"showButtons": {
+			"type": "boolean",
+			"default": true
+		},
+		"justifyContent": {
+			"type": "string",
+			"default": "left"
+		}
+	},
+	"example": {
+		"eyebrow" : {
+			"default": "Eyebrow"
+		},
+		"title" : {
+			"default": "Title"
+		},
+		"description": {
+			"default": "Phasellus ac feugiat est, vitae eleifend urna. Vestibulum consectetur orci ac odio blandit consectetur. Vivamus consectetur sem quis urna placerat bibendum."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocksmg",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./markup.php",
+	"viewScript": "file:./view.js"
+}
