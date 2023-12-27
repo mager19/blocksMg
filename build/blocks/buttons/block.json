@@ -1,19 +1,35 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "blocksmg/example-blocksmg",
+  "name": "blocksmg/buttons",
   "version": "0.1.0",
-  "title": "Example-Blocksmg",
+  "title": "BMG-Buttons",
   "category": "blocksmg",
   "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "description": "buttons group.",
   "example": {},
   "supports": {
     "html": false
   },
+  "attributes": {
+    "justifyContent": {
+      "type": "string",
+      "default": "left"
+    },
+    "gap": {
+      "type": "number",
+      "default": 10
+    }
+  },
+  "keywords": [
+    "button",
+    "blocksmg",
+    "Link"
+  ],
   "textdomain": "blocksmg",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
+  "render": "file:./markup.php",
   "viewScript": "file:./view.js"
 }

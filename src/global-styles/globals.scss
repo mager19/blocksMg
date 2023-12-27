@@ -1,1 +1,58 @@
 @import "./partials/variables.scss";
+
+.block-blocksMg {
+	.block-list-appender{
+		bottom: 5px;
+		right: 5px;
+	}
+	.block-editor-button-block-appender {
+		svg {
+			background-color: $base;
+		}
+	}
+}
+
+.relative {
+	position: relative;
+}
+
+@media (max-width: 767px) {
+	.has-mobilePadding-small{
+		padding: $paddingSmall 0;
+	}
+	.has-mobilePadding-medium{
+		padding: $paddingMedium 0;
+	}
+
+	.has-mobilePadding-large{
+		padding: $paddingLarge 0;
+	}
+
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+	.has-tabletPadding-small{
+		padding: $paddingSmall 0;
+	}
+	.has-tabletPadding-medium{
+		padding: $paddingMedium 0;
+	}
+
+	.has-tabletPadding-large{
+		padding: $paddingLarge 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	.has-desktopPadding-small{
+		padding: $paddingSmall 0;
+	}
+
+	.has-desktopPadding-medium{
+		padding: $paddingMedium 0;
+	}
+
+	.has-desktopPadding-large{
+		padding: $paddingLarge 0;
+	}
+}

@@ -1,8 +1,13 @@
-$base-color: #c6538c;
+$base: #5D3587;
+$paddingSmall: 2rem;
+$paddingMedium: 3rem;
+$paddingLarge: 5rem;
+
 :root {
 	/* Fonts */
 	--fontSize-small: 0.9rem;
 	--fontSize-medium: 1.2rem;
 	--fontSize-large: 1.5rem;
+	--color-base:$base;
 }
 

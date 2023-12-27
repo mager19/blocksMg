@@ -29,6 +29,7 @@ if (!function_exists('getInfoBlock')) {
 $block_wrapper_attributes = get_block_wrapper_attributes(
     [
     'class' => getInfoBlock($attributes),
+    'style' => "background-color: #5D3587; color: #fff;"
     ]
 );
 
