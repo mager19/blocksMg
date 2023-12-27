@@ -1,21 +1,21 @@
 @import "./partials/variables.scss";
 
-.block-blocksMg {
-	.block-list-appender{
-		bottom: 5px;
-		right: 5px;
-	}
-	.block-editor-button-block-appender {
-		svg {
-			background-color: $base;
-		}
-	}
-}
 
 .editor-styles-wrapper {
-	opacity: 0.2;
 	.block__container__innerblocks {
 		position: relative;
+	}
+
+	.block-blocksMg {
+		.block-list-appender{
+			bottom: 5px;
+			right: 5px;
+		}
+		.block-editor-button-block-appender {
+			svg {
+				background-color: $base;
+			}
+		}
 	}
 }
 
