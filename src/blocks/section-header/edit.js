@@ -39,7 +39,7 @@ export default function Edit(props) {
 	const { eyebrow, title, description, showEyebrow, showDescription, showButtons, justifyContent } = attributes;
 
 	const blockProps = useBlockProps({
-		className: `block-blocksMg`,
+		className: `block-blocksMg align-full`,
 		style: {
 			display: 'flex',
 			flexWrap: 'wrap',

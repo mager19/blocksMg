@@ -17,6 +17,12 @@
 			}
 		}
 	}
+
+	.block__container__innerblocks__inner {
+		.tagBlock {
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 767px) {

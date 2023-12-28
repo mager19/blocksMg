@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-blocksmg-image-text {
+	align-items: center;
+	display: grid;
+	gap:1rem;
+	grid-template-columns: repeat(2, 1fr);
+
+	.imageFrame {
+		order: 1;
+	}
+
+	.block__container__innerblocks__inner {
+		order: 2;
+	}
+
+
+	img {
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+	}
+
+}
