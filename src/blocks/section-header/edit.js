@@ -8,7 +8,7 @@ import { RichText, useBlockProps, useInnerBlocksProps, InspectorControls } from 
 
 import {
 	PanelBody, ToggleControl, __experimentalToggleGroupControl as ToggleGroupControl,
-	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
+	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon, FontSizePicker
 } from '@wordpress/components';
 
 /**
@@ -48,7 +48,7 @@ export default function Edit(props) {
 		}
 	});
 
-	const innerBlocksProps = useInnerBlocksProps(blockProps, {
+	const innerBlocksProps = useInnerBlocksProps({
 		template: [["blocksmg/buttons"]],
 		templateLock: true,
 	})
@@ -100,7 +100,6 @@ export default function Edit(props) {
 							value="flex-end"
 						/>
 					</ToggleGroupControl>
-
 				</PanelBody>
 			</InspectorControls>
 			<div className='block__container__innerblocks'>

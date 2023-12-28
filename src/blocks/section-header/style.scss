@@ -5,8 +5,11 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-create-block-example-blocksmg {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.wp-block-blocksmg-section-header {
+	display: flex;
+	flex-wrap: wrap;
+
+	.section-header-title {
+		margin: 0.5rem 0 0 0;
+	}
 }
