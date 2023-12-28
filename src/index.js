@@ -3,7 +3,10 @@ import { InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
-const blocks = ['blocksmg/buttons'];
+const blocks = [
+	'blocksmg/buttons',
+	'blocksmg/section-header',
+];
 
 const additionalAttributes = {
 	mobilePadding: {
