@@ -48,7 +48,7 @@ export default function Edit(props) {
 		}
 	});
 
-	const innerBlocksProps = useInnerBlocksProps({
+	const innerBlocksProps = useInnerBlocksProps({}, {
 		template: [["blocksmg/buttons"]],
 		templateLock: true,
 	})
