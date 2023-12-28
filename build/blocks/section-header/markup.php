@@ -38,9 +38,9 @@ $block_wrapper_attributes = get_block_wrapper_attributes(
     }
 
     if ($attributes['showButtons']) { ?>
-            <div class="buttons">
+        <div class="buttons">
         <?php echo $content; ?>
-            </div>
+        </div>
         <?php
     }
     ?>
