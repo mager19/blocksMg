@@ -13,7 +13,7 @@ $blockClasses .= $paddingBlocks . '';
 $blockStyles = $attributes['justifyContent'] ?
 'justify-content: ' . $attributes['justifyContent'] . ';' : '';
 
-$blockStyles .= $attributes['justifyContent'] === 'flex-end' ? 'text-align: right;' : ($attributes['justifyContent'] === 'flex-start' ? 'text-align: left;' : 'text-align: center;');
+$blockStyles .= $attributes['justifyContent'] === 'flex-end' ? 'text-align: right;' : ($attributes['justifyContent'] === 'center' ? 'text-align: center;' : 'text-align: left;');
 
 $block_wrapper_attributes = get_block_wrapper_attributes(
     [

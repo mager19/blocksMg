@@ -10,15 +10,15 @@
   "attributes": {
     "eyebrow": {
       "type": "string",
-      "default": ""
+      "default": "Eyebrow"
     },
     "title": {
       "type": "string",
-      "default": ""
+      "default": "Suspendisse eleifend ligula in metus."
     },
     "description": {
       "type": "string",
-      "default": ""
+      "default": "Phasellus tempor cursus est sed venenatis. Phasellus ultrices porta quam eu tristique. Suspendisse potenti. Donec tristique augue nisl, sed finibus justo condimentum at. Nullam nisi nunc, convallis vel vestibulum ut, mattis ut orci. Sed faucibus commodo aliquet."
     },
     "showEyebrow": {
       "type": "boolean",

@@ -44,7 +44,7 @@ export default function Edit(props) {
 			display: 'flex',
 			flexWrap: 'wrap',
 			justifyContent: justifyContent,
-			textAlign: justifyContent === 'flex-end' ? 'right' : (justifyContent === 'flex-start' ? 'left' : 'center')
+			textAlign: justifyContent === 'flex-end' ? 'right' : (justifyContent === 'center' ? 'center' : 'left')
 		}
 	});
 
